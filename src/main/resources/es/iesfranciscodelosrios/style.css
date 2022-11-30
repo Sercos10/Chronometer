@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'DS-Digital';
+    src: url('DS-DIGI.TTF');
+}
+
+.background{
+    -fx-background-color: FFE7B9;
+    -fx-background-radius: 250;
+    -fx-border-color: black;
+    -fx-border-radius: 250;
+}
+
+.background2{
+    -fx-background-color:  FFE7B9;-fx-background-radius: 250;
+
+}
+
+.backgroundDM{
+    -fx-background-color: #141414;
+    -fx-background-radius: 250;
+    -fx-border-color: black;
+    -fx-border-radius: 250;
+}
+
+.background2DM{
+    -fx-background-color:  #141414;
+    -fx-background-radius: 250;
+}
+
+.text {
+    -fx-font-family: "DS-Digital";
+    -fx-color-label-visible: black;
+}
+
+.textDM{
+    -fx-font-family: DS-Digital;-fx-color-label-visible: green;
+}
+
+.rectangle1{
+    -fx-rotate: 45;
+    -fx-fill:  E8C98B;
+}
+
+.rectangle{
+    -fx-fill:  E8C98B;
+}
+
+.rectangle2{
+    -fx-rotate: 130;
+    -fx-fill:  E8C98B;
+}
+
+.rectangle1DM{
+    -fx-rotate: 45;
+    -fx-fill:  #404040;
+}
+
+.rectangleDM{
+    -fx-fill:  #404040;
+}
+
+.rectangle2DM{
+    -fx-rotate: 130;
+    -fx-fill:  #404040;
+}

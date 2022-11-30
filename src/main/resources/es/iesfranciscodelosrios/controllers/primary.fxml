@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0" prefWidth="600.0" style="-fx-background-color: none;" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.iesfranciscodelosrios.controllers.PrimaryController">
+   <children>
+      <Rectangle fx:id="rec" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="477.0" layoutX="196.0" stroke="BLACK" strokeType="INSIDE" styleClass="rectangle" width="200.0" />
+      <AnchorPane fx:id="anchor" layoutX="92.0" layoutY="37.0" prefHeight="403.0" prefWidth="407.0" style="-fx-background-color: FFE7B9; -fx-border-radius: 250; -fx-border-color: black; -fx-background-radius: 250;" styleClass="background" stylesheets="@../style.css">
+         <children>
+            <Pane layoutX="37.0" layoutY="60.0" prefHeight="278.0" prefWidth="349.0" style="-fx-background-color: transient;">
+               <children>
+                  <Rectangle fx:id="fech" arcHeight="5.0" arcWidth="5.0" fill="#a49e9e" height="82.0" layoutX="287.0" layoutY="217.0" onMouseClicked="#showF" stroke="BLACK" strokeType="INSIDE" style="-fx-rotate: 130;" styleClass="rectangle2" width="67.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Rectangle>
+                  <Rectangle fx:id="blackM" arcHeight="5.0" arcWidth="5.0" fill="#a49e9e" height="82.0" layoutX="-21.0" layoutY="219.0" onMouseClicked="#DarkMode" stroke="BLACK" strokeType="INSIDE" style="-fx-rotate: 45;" styleClass="rectangle1" width="67.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Rectangle>
+                  <Rectangle fx:id="pauseB" arcHeight="5.0" arcWidth="5.0" fill="#a49e9e" height="82.0" layoutX="262.0" layoutY="-42.0" onMouseClicked="#Pause" stroke="BLACK" strokeType="INSIDE" style="-fx-rotate: 45;" styleClass="rectangle1" width="67.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Rectangle>
+                  <Rectangle fx:id="startB" arcHeight="5.0" arcWidth="5.0" fill="#a49e9e" height="82.0" layoutX="262.0" layoutY="-42.0" onMouseClicked="#Start" stroke="BLACK" strokeType="INSIDE" style="-fx-rotate: 45;" styleClass="rectangle1" width="67.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Rectangle>
+                  <Rectangle fx:id="resetB" arcHeight="5.0" arcWidth="5.0" fill="#a49e9e" height="82.0" layoutX="8.0" layoutY="-43.0" onMouseClicked="#Reset" stroke="BLACK" strokeType="INSIDE" style="-fx-rotate: 130;" styleClass="rectangle2" width="67.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Rectangle>
+                  <Pane fx:id="pane1" layoutX="136.0" layoutY="-34.0" prefHeight="200.0" prefWidth="200.0" styleClass="background2" stylesheets="@../style.css" />
+                  <Pane fx:id="pane3" layoutX="148.0" layoutY="106.0" prefHeight="200.0" prefWidth="200.0" styleClass="background2" stylesheets="@../style.css" />
+                  <Pane fx:id="pane4" layoutX="-18.0" layoutY="104.0" prefHeight="200.0" prefWidth="200.0" styleClass="background2" stylesheets="@../style.css" />
+                  <Pane fx:id="pane2" layoutX="-2.0" layoutY="-36.0" prefHeight="200.0" prefWidth="200.0" styleClass="background2" stylesheets="@../style.css" />
+                  <HBox alignment="CENTER" layoutX="39.0" layoutY="77.0" prefHeight="123.0" prefWidth="266.0" style="-fx-border-color: black; -fx-border-radius: 250; -fx-background-color: white; -fx-background-radius: 250;">
+                     <children>
+                        <Label fx:id="horas" alignment="CENTER_RIGHT" contentDisplay="CENTER" nodeOrientation="RIGHT_TO_LEFT" style="-fx-padding: 3px;" styleClass="text" stylesheets="@../style.css" text="00">
+                           <font>
+                              <Font name="Arial" size="52.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="puntos" alignment="CENTER_RIGHT" contentDisplay="CENTER" nodeOrientation="RIGHT_TO_LEFT" style="-fx-padding: 3px;" styleClass="text" stylesheets="@../style.css" text=":">
+                           <font>
+                              <Font name="Arial" size="52.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="minutos" alignment="CENTER_RIGHT" contentDisplay="CENTER" nodeOrientation="RIGHT_TO_LEFT" style="-fx-padding: 3px;" styleClass="text" stylesheets="@../style.css" text="00">
+                           <font>
+                              <Font name="Arial" size="52.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="puntos2" alignment="CENTER_RIGHT" contentDisplay="CENTER" nodeOrientation="RIGHT_TO_LEFT" style="-fx-padding: 3px;" styleClass="text" stylesheets="@../style.css" text=":">
+                           <font>
+                              <Font name="Arial" size="52.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="segundos" alignment="CENTER_RIGHT" contentDisplay="RIGHT" style="-fx-padding: 3px;" styleClass="text" stylesheets="@../style.css" text="00" textAlignment="CENTER">
+                           <font>
+                              <Font name="Arial" size="52.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+                  <Label fx:id="fecha" contentDisplay="CENTER" layoutX="152.0" layoutY="84.0" prefHeight="21.0" prefWidth="49.0" styleClass="text" stylesheets="@../style.css" text="00/00" textAlignment="CENTER" visible="false">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="guardado" contentDisplay="CENTER" layoutX="146.0" layoutY="170.0" prefHeight="21.0" prefWidth="70.0" styleClass="text" stylesheets="@../style.css" text="00:00:00" textAlignment="CENTER" visible="false">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children></AnchorPane>
+      <Line endX="100.0" layoutX="296.0" layoutY="27.0" startX="-100.0" />
+      <Line endX="100.0" layoutX="296.0" layoutY="452.0" startX="-100.0" />
+   </children>
+</AnchorPane>
