@@ -90,5 +90,9 @@
          </children></AnchorPane>
       <Line endX="100.0" layoutX="296.0" layoutY="27.0" startX="-100.0" />
       <Line endX="100.0" layoutX="296.0" layoutY="452.0" startX="-100.0" />
+      <Label layoutX="437.0" layoutY="26.0" text="Iniciar/Pausar" />
+      <Label layoutX="104.0" layoutY="24.0" text="reiniciar" />
+      <Label layoutX="62.0" layoutY="401.0" text="Dark Mode" />
+      <Label layoutX="482.0" layoutY="404.0" text="Mostrar Fecha" />
    </children>
 </AnchorPane>

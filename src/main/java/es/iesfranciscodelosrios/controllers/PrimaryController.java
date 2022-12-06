@@ -64,15 +64,9 @@ public class PrimaryController implements Initializable{
     private Rectangle fech;
 
     @FXML
-    private void switchToSecondary() throws IOException {
-        App.setRoot("secondary");
-    }
-
-    @FXML
     private void Start(){
         startB.setVisible(false);
         pauseB.setVisible(true);
-        t= new Thread(r);
         t.start();
         r.suspendido.setSuspendido(false);
 
